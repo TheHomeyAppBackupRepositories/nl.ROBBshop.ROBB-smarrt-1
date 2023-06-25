@@ -1,0 +1,2 @@
+ROBB smarrt heeft een uitgebreid assortiment betaalbare dimmers, schakelaars, gordijnsystemen en wandzenders. Exclusief ontwikkelt door en verkocht bij ROBBshop.nl. Superkwaliteit dus, die goed te betalen is! Je kan zowel kiezen voor het draadloze protocol Z-Wave als Zigbee om een nog sterker mesh netwerk te bouwen, maar je kan deze twee ook combineren. Dubbel zo ‘smarrt’ eh slim dus!
+Automatiseer je verlichting met een draai- of inbouw dimmer, bestuur je Hue lampen, activeer scenes of bedien je audiosysteem ‘smarrt’. Automatiseer met ROBB smarrt!

@@ -1,0 +1,117 @@
+[
+  "ids": {
+    "modelId": "CCT Light",
+    "manufacturerName": "ZigBee/CCT"
+  },
+  "endpoints": {
+    "ieeeAddress": "00:15:8d:00:05:3c:43:67",
+    "modelId": "CCT Light",
+    "manufacturerName": "ZigBee/CCT",
+    "swBuildId": "00.00.01",
+    "capabilities": {
+      "type": "Buffer",
+      "data": [
+        142
+      ]
+    },
+    "endpointDescriptors": [
+      {
+        "status": "SUCCESS",
+        "nwkAddrOfInterest": 32279,
+        "_reserved": 34,
+        "endpointId": 1,
+        "applicationProfileId": 260,
+        "applicationDeviceId": 268,
+        "applicationDeviceVersion": 0,
+        "_reserved1": 1,
+        "inputClusters": [
+          0,
+          4,
+          3,
+          6,
+          8,
+          5,
+          768,
+          65535,
+          65535,
+          4096,
+          4111
+        ],
+        "outputClusters": [
+          25,
+          4111
+        ]
+      },
+      {
+        "status": "SUCCESS",
+        "nwkAddrOfInterest": 32279,
+        "_reserved": 12,
+        "endpointId": 242,
+        "applicationProfileId": 41440,
+        "applicationDeviceId": 102,
+        "applicationDeviceVersion": 0,
+        "_reserved1": 0,
+        "inputClusters": [
+          33
+        ],
+        "outputClusters": [
+          33
+        ]
+      }
+    ],
+    "touchlinkGroupIds": [],
+    "extendedEndpointDescriptors": {
+      "1": {
+        "clusters": {
+          "basic": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "groups": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "identify": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "onOff": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "levelControl": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "scenes": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "colorControl": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "touchlink": {
+            "attributes": "UNSUP_GENERAL_COMMAND",
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          }
+        },
+        "bindings": {
+          "ota": {}
+        }
+      },
+      "242": {
+        "clusters": {},
+        "bindings": {}
+      }
+    }
+  }
+]

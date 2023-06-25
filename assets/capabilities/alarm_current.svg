@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 180.65 132.3"
+	 style="enable-background:new 0 0 180.65 132.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-opacity:0;}
+	.st1{fill:none;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview3428" inkscape:current-layer="Layer_1" inkscape:cx="91.621319" inkscape:cy="36.426837" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="811" inkscape:window-maximized="1" inkscape:window-width="1440" inkscape:window-x="0" inkscape:window-y="1" inkscape:zoom="6.51" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<rect id="rect3422" x="48.45" class="st0" width="132.2" height="132.2"/>
+<g id="flowRoot3434" transform="translate(-362.70001,661.40002)">
+</g>
+<g>
+	<path d="M109.9,101.09L64.41,14.36c-3.75-7.15-13.98-7.15-17.74,0l-45.5,86.73c-3.5,6.67,1.34,14.67,8.86,14.67h45.49l0,0h45.49
+		C108.56,115.74,113.4,107.75,109.9,101.09z M50.61,44.81c0-2.81,2.28-5.1,5.1-5.1l0,0c2.81,0,5.1,2.28,5.1,5.1v29.24
+		c0,2.81-2.28,5.1-5.1,5.1l0,0c-2.81,0-5.1-2.28-5.1-5.1V44.81z M55.53,100.92c-4.06,0-7.35-3.29-7.35-7.35
+		c0-4.06,3.29-7.35,7.35-7.35s7.35,3.29,7.35,7.35C62.88,97.63,59.59,100.92,55.53,100.92z"/>
+</g>
+<polygon class="st1" points="98.77,62.9 106.3,77.25 111.75,62.9 "/>
+<ellipse transform="matrix(0.3827 -0.9239 0.9239 0.3827 -55.6588 111.3969)" class="st1" cx="55.53" cy="97.35" rx="8.93" ry="8.93"/>
+<path class="st1" d="M55.76,79.81c3.43,0,6.2-2.78,6.2-6.2V38.06c0-3.43-2.78-6.2-6.2-6.2c-3.43,0-6.2,2.78-6.2,6.2v35.55
+	C49.55,77.04,52.34,79.81,55.76,79.81z"/>
+<polygon points="85.35,132.3 91.02,124.33 88.39,124.33 "/>
+<polygon points="111.75,62.9 106.3,77.25 114.02,91.97 151.45,39.3 121.85,39.3 141.75,0 109.75,0 91.06,48.2 98.77,62.9 "/>
+</svg>
