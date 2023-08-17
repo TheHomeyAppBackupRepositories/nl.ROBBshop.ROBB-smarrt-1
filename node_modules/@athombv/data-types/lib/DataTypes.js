@@ -166,6 +166,7 @@ function uintToBufBE(buf, v, i) {
 }
 
 function uintFromBufBE(buf, i) {
+  if (buf.length - i < this.length) return 0;
   return buf.readUIntBE(i, this.length);
 }
 
@@ -183,6 +184,7 @@ function floatToBuf(buf, v, i) {
 }
 
 function floatFromBuf(buf, i) {
+  if (buf.length - i < 4) return 0;
   return buf.readFloatLE(i);
 }
 
@@ -191,6 +193,7 @@ function doubleToBuf(buf, v, i) {
 }
 
 function doubleFromBuf(buf, i) {
+  if (buf.length - i < 8) return 0;
   return buf.readDoubleLE(i);
 }
 
