@@ -67,9 +67,8 @@ class ZBThermostatDevice extends ZigBeeDevice {
       this.registerCapabilityListener('target_temperature',
         async (value, opts) => {
           let { occupancy } = await this._thermostatCluster.readAttributes('occupancy');
-
           let payload = occupancy.occupied ? { occupiedHeatingSetpoint : value * 100, } : { unoccupiedHeatingSetpoint : value * 100, }
-          this.log('Setting target temperature', value, payload);
+          this.log('Setting target temperature', value, payload, occupancy, occupancy.occupied);
           return this._thermostatCluster.writeAttributes(payload)
         })
 

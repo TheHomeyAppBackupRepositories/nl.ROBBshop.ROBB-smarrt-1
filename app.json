@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "compatibility": ">=8.0.0",
   "sdk": 3,
   "brandColor": "#f28c00",
@@ -671,7 +671,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "Motor Controller",
@@ -742,7 +743,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "Motor Controller",
@@ -788,7 +790,87 @@
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ZB_Dimmer_2wire",
@@ -843,7 +925,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG9040A-S",
@@ -934,6 +1017,85 @@
               }
             }
           ]
+        },
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
         }
       ]
     },
@@ -973,7 +1135,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG9101SAC-HP",
@@ -1058,6 +1221,85 @@
               }
             }
           ]
+        },
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
         }
       ]
     },
@@ -1114,7 +1356,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "Micro Smart Dimmer",
@@ -1204,6 +1447,85 @@
               }
             }
           ]
+        },
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
         }
       ]
     },
@@ -1249,7 +1571,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "CCT Lighting",
@@ -1370,7 +1693,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "RGBW Lighting",
@@ -1490,7 +1814,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "DIM Lighting",
@@ -1669,6 +1994,387 @@
       ]
     },
     {
+      "id": "ZB_MotionSensor",
+      "name": {
+        "en": "Motion sensor (Zigbee)",
+        "nl": "Bewegingsmelder (Zigbee)"
+      },
+      "icon": "/drivers/ZB_MotionSensor/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZB_MotionSensor/assets/images/large.png",
+        "small": "/drivers/ZB_MotionSensor/assets/images/small.png"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_temperature",
+        "measure_humidity",
+        "measure_luminance",
+        "measure_battery",
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "Sunricher",
+          "ROBB smarrt",
+          "ROBB  smarrt"
+        ],
+        "productId": [
+          "SR-ZG9030A",
+          "ROB_200-070-0",
+          "ROB_200-070",
+          "ROB_200_070-0"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1030
+            ],
+            "bindings": [
+              1,
+              1030
+            ]
+          },
+          "2": {
+            "clusters": [
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          },
+          "3": {
+            "clusters": [
+              1026
+            ],
+            "bindings": [
+              1026
+            ]
+          },
+          "4": {
+            "clusters": [
+              1029
+            ],
+            "bindings": [
+              1029
+            ]
+          },
+          "5": {
+            "clusters": [
+              1024
+            ],
+            "bindings": [
+              1024
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZB_MotionSensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "To include the motion sensor to Homey: \nPress the button 3 times.",
+            "nl": "Om de bewegingsensor aan Homey toe te voegen: \n1. Druk de knop 3 keer in."
+          }
+        }
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Motion sensor",
+            "nl": "Bewegingssensor"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "motion_sensor_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Motion sensor sensitivity",
+                "nl": "Bewegingssensor gevoeligheid"
+              },
+              "hint": {
+                "en": "This parameter determines the motion sensor sensitivity setting",
+                "nl": "Deze parameter bepaalt de bewegingssensor gevoeligheid instelling"
+              },
+              "value": "default",
+              "values": [
+                {
+                  "id": "high",
+                  "label": {
+                    "en": "High",
+                    "nl": "Hoog"
+                  }
+                },
+                {
+                  "id": "default",
+                  "label": {
+                    "en": "Default",
+                    "nl": "Standaard"
+                  }
+                },
+                {
+                  "id": "medium",
+                  "label": {
+                    "en": "Medium",
+                    "nl": "Gemiddeld"
+                  }
+                },
+                {
+                  "id": "low",
+                  "label": {
+                    "en": "Low",
+                    "nl": "Laag"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "motion_sensor_blindtime",
+              "type": "number",
+              "label": {
+                "en": "Motion sensor blindtime",
+                "nl": "Bewegingssensor blindtime"
+              },
+              "value": 8,
+              "attr": {
+                "min": 0,
+                "max": 8,
+                "step": 0.5
+              },
+              "hint": {
+                "en": "This parameter determines the period of time through which the PIR sensor is “blind” (insensitive) to motion.",
+                "nl": "Deze parameter bepaalt de periode na detecteren van beweging gedurende de sensor ongevoelig is voor nieuwe bewegingsdetectie."
+              }
+            },
+            {
+              "id": "motion_sensor_cancellation_delay",
+              "label": {
+                "en": "Cancellation delay (s)",
+                "nl": "Annuleringsperiode (s)"
+              },
+              "hint": {
+                "en": "This parameter sets the time after which the alarm will be cancelled.",
+                "nl": "Deze parameter bepaalt de tijd waarna het alarm wordt gedeactiveerd."
+              },
+              "value": 30,
+              "attr": {
+                "min": 3,
+                "max": 28800
+              },
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Light sensor",
+            "nl": "Lichtsensor"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "value": 3600,
+              "attr": {
+                "min": 0,
+                "max": 2678400
+              },
+              "id": "reporting_interval_luminance",
+              "label": {
+                "en": "Report interval",
+                "nl": "Rapportage interval"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the time between reports to Homey, independent of value changes.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer de waarden naar Homey worden verzonden, ook als deze niet veranderd is."
+              },
+              "type": "number",
+              "units": {
+                "en": "s"
+              }
+            },
+            {
+              "value": 1,
+              "attr": {
+                "min": 1,
+                "max": 32767
+              },
+              "units": {
+                "en": "lux"
+              },
+              "id": "reporting_threshold_luminance",
+              "label": {
+                "en": "Report threshold",
+                "nl": "Rapportage drempel"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum change in value before reporting changes to Homey.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering van de meetwaarde voordat deze naar Homey wordt gestuurd."
+              },
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Temperature sensor",
+            "nl": "Temperatuursensor"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "value": 600,
+              "attr": {
+                "min": 2,
+                "max": 3600
+              },
+              "id": "reporting_interval_temperature",
+              "label": {
+                "en": "Report interval",
+                "nl": "Rapportage interval"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the time between reports to Homey, independent of value changes.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer de waarden naar Homey worden verzonden, ook als deze niet veranderd is."
+              },
+              "type": "number",
+              "units": {
+                "en": "s"
+              }
+            },
+            {
+              "value": 1,
+              "attr": {
+                "min": 0,
+                "max": 25.5,
+                "step": 0.1
+              },
+              "units": {
+                "en": "°C"
+              },
+              "id": "reporting_threshold_temperature",
+              "label": {
+                "en": "Report threshold",
+                "nl": "Rapportage drempel"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum change in value before reporting changes to Homey.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering van de meetwaarde voordat deze naar Homey wordt gestuurd."
+              },
+              "type": "number"
+            },
+            {
+              "id": "sensor_compensation_temperature",
+              "label": {
+                "en": "Temperature compensation",
+                "nl": "Temperatuur compensatie"
+              },
+              "hint": {
+                "en": "This parameter determines the temperature compensation setting",
+                "nl": "Deze parameter bepaalt de temperatuur compensatie instelling"
+              },
+              "value": 0,
+              "attr": {
+                "min": -100,
+                "max": 100,
+                "step": 0.1
+              },
+              "type": "number",
+              "units": {
+                "en": "°C"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Humidity sensor",
+            "nl": "Luchtvochtigheidsensor"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "value": 600,
+              "attr": {
+                "min": 2,
+                "max": 3600
+              },
+              "id": "reporting_interval_humidity",
+              "label": {
+                "en": "Report interval",
+                "nl": "Rapportage interval"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the time between reports to Homey, independent of value changes.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer de waarden naar Homey worden verzonden, ook als deze niet veranderd is."
+              },
+              "type": "number",
+              "units": {
+                "en": "s"
+              }
+            },
+            {
+              "value": 1,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%"
+              },
+              "id": "reporting_threshold_humidity",
+              "label": {
+                "en": "Report threshold",
+                "nl": "Rapportage drempel"
+              },
+              "hint": {
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum change in value before reporting changes to Homey.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering van de meetwaarde voordat deze naar Homey wordt gestuurd."
+              },
+              "type": "number"
+            },
+            {
+              "id": "sensor_compensation_humidity",
+              "value": 0,
+              "label": {
+                "en": "Humidity compensation",
+                "nl": "Luchtvochtigheids compensatie"
+              },
+              "hint": {
+                "en": "This parameter determines the humidity compensation setting",
+                "nl": "Deze parameter bepaalt de luchtvochtigheids compensatie instelling"
+              },
+              "attr": {
+                "min": -100,
+                "max": 100,
+                "step": 1
+              },
+              "type": "number",
+              "units": {
+                "en": "%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ZB_Remote_4",
       "name": {
         "en": "Remote - 4 channel (Zigbee)",
@@ -1715,7 +2421,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZGRC-KEY-013",
@@ -1846,7 +2553,8 @@
       ],
       "zigbee": {
         "manufacturerName": [
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ROB_200_050-0",
@@ -2055,7 +2763,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ON/OFF",
@@ -2089,7 +2798,228 @@
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZB_Switch_2wire",
+      "name": {
+        "en": "Switch - 2 wire (Zigbee)",
+        "nl": "Inbouwschakelaar 2-draads (Zigbee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "icon": "/drivers/ZB_Switch_2wire/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZB_Switch_2wire/assets/images/large.png",
+        "small": "/drivers/ZB_Switch_2wire/assets/images/small.png"
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "Sunricher",
+          "ROBB smarrt",
+          "ROBB  smarrt"
+        ],
+        "productId": [
+          "ROB_200-030-0",
+          "ROB_200-030",
+          "ROB_200_030-0"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              2821,
+              4096
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZB_Switch_2wire/assets/learnmode.svg",
+          "instruction": {
+            "instruction": {
+              "en": "There are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+              "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ZB_Switch_Double",
@@ -2134,7 +3064,8 @@
       ],
       "zigbee": {
         "manufacturerName": [
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ROB_200-026-0",
@@ -2220,7 +3151,87 @@
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ZB_Switch_Metering",
@@ -2265,7 +3276,8 @@
       ],
       "zigbee": {
         "manufacturerName": [
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ROB_200-035-0",
@@ -2301,7 +3313,87 @@
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "id": "save_state",
+          "value": "toggle",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "Turn off",
+                "nl": "Schakel uit"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "Turn on",
+                "nl": "Schakel in"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "Toggle state",
+                "nl": "Verander toestand"
+              }
+            },
+            {
+              "id": "latest",
+              "label": {
+                "en": "Restore state",
+                "nl": "Herstel toestand"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "switch_type",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type",
+            "nl": "Schakelaar type"
+          },
+          "hint": {
+            "en": "This parameter determines what device is operating the switch.",
+            "nl": "Deze parameter bepaalt welk apparaat de schakelaar bestuurt."
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdrukschakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Toggle switch",
+                "nl": "Tuimelschakelaar"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch",
+                "nl": "Driewegschakelaar"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ZB_Thermostat",
@@ -2367,7 +3459,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG9092",
@@ -3087,7 +4180,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZGRC-KEY-007",
@@ -3174,7 +4268,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG2833K4_EU06",
@@ -3275,7 +4370,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG2833K8_EU05",
@@ -3409,7 +4505,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ZG2835",
@@ -3509,7 +4606,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "SmartOutlet",
@@ -3598,7 +4696,8 @@
       ],
       "zigbee": {
         "manufacturerName": [
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB  smarrt"
         ],
         "productId": [
           "ROB_200-017-1"
@@ -4047,6 +5146,9 @@
               "attr": {
                 "min": 0,
                 "max": 127
+              },
+              "unit": {
+                "en": "s"
               }
             },
             {
@@ -4461,6 +5563,9 @@
               "attr": {
                 "min": 0,
                 "max": 127
+              },
+              "unit": {
+                "en": "s"
               }
             },
             {
@@ -4710,6 +5815,9 @@
               "attr": {
                 "min": 0,
                 "max": 127
+              },
+              "unit": {
+                "en": "s"
               }
             },
             {
@@ -5628,8 +6736,8 @@
               },
               "id": "reporting_interval_luminance",
               "label": {
-                "en": "Report interval (s)",
-                "nl": "Rapportage interval (s)"
+                "en": "Report interval",
+                "nl": "Rapportage interval"
               },
               "hint": {
                 "en": "This parameter (13) determines the time between reports to Homey, independent of value changes.",
@@ -5686,8 +6794,8 @@
               },
               "id": "reporting_interval_temperature",
               "label": {
-                "en": "Report interval (s)",
-                "nl": "Rapportage interval (s)"
+                "en": "Report interval",
+                "nl": "Rapportage interval"
               },
               "hint": {
                 "en": "This parameter (16) determines the time between reports to Homey, independent of value changes.",
@@ -5783,7 +6891,7 @@
               "type": "number"
             },
             {
-              "id": "sensor_compensation_temperature",
+              "id": "sensor_compensation_humidity",
               "value": 0,
               "label": {
                 "en": "Humidity compensation",
@@ -5808,15 +6916,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Light sensor",
-            "nl": "Lichtsensor"
-          },
-          "collapsed": true,
-          "children": []
         }
       ]
     },
