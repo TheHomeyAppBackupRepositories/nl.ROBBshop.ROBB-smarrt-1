@@ -4,9 +4,9 @@
 	"description": "This app adds support for the [ROBB smarrt devices](https://www.robbshop.nl/manufacturers/robb-smarrt) sold by [ROBBshop.nl](https://www.ROBBshop.nl).",
 	"main": "app.js",
 	"dependencies": {
-		"homey-zigbeedriver": "^1.6.12",
+		"homey-zigbeedriver": "^2.1.4",
 		"homey-zwavedriver": "^2.1.10",
-		"zigbee-clusters": "^1.7.1"
+		"zigbee-clusters": "^2.4.0"
 	},
 	"devDependencies": {
 		"eslint": "^8.35.0",

@@ -14,7 +14,7 @@ module.exports = class ZB_WallPlugTemperature extends ZBSwitchDevice {
     // debug(true);
 
     // enable debugging
-    // this.enableDebug();
+    this.enableDebug();
 
     // print the node's info to the console
     // this.printNode();
