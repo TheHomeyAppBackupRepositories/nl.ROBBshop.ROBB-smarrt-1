@@ -99,10 +99,10 @@ class ZBSwitchDevice extends ZigBeeDevice {
       if (!this.referenceCurrentSummationDelivered) {
         if (this.isFirstInit()) {
           await this.setRefCurrentSummationDelivered();
-          this.setCapabilityValue('meter_power', 0).catch(this.error);
+          this.setCapabilityValue('meter_power', 0);
           this.debug('Set referenceCurrentSummationDelivered by reading attributes:', this.referenceCurrentSummationDelivered);
         } else if (!this.getStoreValue('referenceCurrentSummationDelivered')) {
-          this.referenceCurrentSummationDelivered = 0;
+          this.referenceCurrentSumDelivered = 0;
           this.debug('storeValue for referenceCurrentSummationDelivered not defined, set to 0');
         } else {
           this.referenceCurrentSummationDelivered = this.getStoreValue('referenceCurrentSummationDelivered');
@@ -130,7 +130,7 @@ class ZBSwitchDevice extends ZigBeeDevice {
           await this.setRefCurrentSummationDelivered();
 
           // set meter_power capability value
-          this.setCapabilityValue('meter_power', 0).catch(this.error);
+          this.setCapabilityValue('meter_power', 0);
           this.log('MaintenanceAction | Reset meter - completed successfully');
         } catch (err) {
           this.debug('MaintenanceAction | Reset meter - ERROR: Could not complete maintenanceAction:', err);
@@ -155,7 +155,7 @@ class ZBSwitchDevice extends ZigBeeDevice {
           this.debug('METER_POWER value received', value, value * meteringFactor, 'parsed as', (value - referenceCurrentSummationDelivered) * meteringFactor);
           return (value - referenceCurrentSummationDelivered) * meteringFactor;
         },
-        // reportParser = value * this.meteringFactor - this.referenceCurrentSummationDelivered
+        // reportParser = value * this.meteringFactor - this.referenceCurrentSumDelivered
         endpoint: this.isSubDevice() ? 2 : 1,
       });
     }

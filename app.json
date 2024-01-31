@@ -1,8 +1,8 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "2.8.2",
-  "compatibility": ">=10.0.0",
+  "version": "2.7.0",
+  "compatibility": ">=8.0.0",
   "sdk": 3,
   "brandColor": "#f28c00",
   "name": {
@@ -703,15 +703,15 @@
         "learnmode": {
           "image": "/drivers/ZB_CurtainController/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the curtain controller into inclusion mode: 1) Repower on the curtain controller, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the K2 button 5 times (within 1.5 seconds) on the curtain controller, it will reset the controller and activate the inclusion mode.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:1) Stroom opnieuw inschakelen op de rolluikschakelaar, waarna de rolluikschakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de K2 knop op de rolluikschakelaar indrukken reset de rolluikschakelaar en activeert de inclusion modus."
+            "en": "There are two methods to set the curtain controller into inclusion mode:\n1)Repower on the curtain controller, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the K2 button 5 times (within 1.5 seconds) on the curtain controller, it will reset the controller and activate the inclusion mode.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de rolluikschakelaar, waarna de rolluikschakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de K2 knop op de rolluikschakelaar indrukken reset de rolluikschakelaar en activeert de inclusion modus."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_CurtainController/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the curtain controller, triple press the K2 button.  The curtain controller will be set to exclusion mode, and waiting to be excluded, then the curtain controller will be excluded to the network.",
-            "nl": "Om de rolluikschakelaar te verwijderen, druk drie keer de K2 knop op de rolluikschakelaar in.   De exclusion modus van de rolluikschakelaar wordt geactiveerd en de rolluikschakelaar wordt verwijdert uit het netwerk."
+            "en": "To remove the curtain controller, triple press the K2 button. \nThe curtain controller will be set to exclusion mode, and waiting to be excluded, then the curtain controller will be excluded to the network.",
+            "nl": "Om de rolluikschakelaar te verwijderen, druk drie keer de K2 knop op de rolluikschakelaar in. \n De exclusion modus van de rolluikschakelaar wordt geactiveerd en de rolluikschakelaar wordt verwijdert uit het netwerk."
           }
         }
       },
@@ -778,15 +778,15 @@
         "learnmode": {
           "image": "/drivers/ZB_CurtainController.2/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the curtain controller into inclusion mode: 1) Repower on the curtain controller, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the K2 button 5 times (within 1.5 seconds) on the curtain controller, it will reset the controller and activate the inclusion mode.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de rolluikschakelaar, waarna de rolluikschakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de K2 knop op de rolluikschakelaar indrukken reset de rolluikschakelaar en activeert de inclusion modus."
+            "en": "There are two methods to set the curtain controller into inclusion mode:\n1)Repower on the curtain controller, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the K2 button 5 times (within 1.5 seconds) on the curtain controller, it will reset the controller and activate the inclusion mode.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de rolluikschakelaar, waarna de rolluikschakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de K2 knop op de rolluikschakelaar indrukken reset de rolluikschakelaar en activeert de inclusion modus."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_CurtainController.2/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the curtain controller, triple press the K2 button.  The curtain controller will be set to exclusion mode, and waiting to be excluded, then the curtain controller will be excluded to the network.",
-            "nl": "Om de rolluikschakelaar te verwijderen, druk drie keer de K2 knop op de rolluikschakelaar in.   De exclusion modus van de rolluikschakelaar wordt geactiveerd en de rolluikschakelaar wordt verwijdert uit het netwerk."
+            "en": "To remove the curtain controller, triple press the K2 button. \nThe curtain controller will be set to exclusion mode, and waiting to be excluded, then the curtain controller will be excluded to the network.",
+            "nl": "Om de rolluikschakelaar te verwijderen, druk drie keer de K2 knop op de rolluikschakelaar in. \n De exclusion modus van de rolluikschakelaar wordt geactiveerd en de rolluikschakelaar wordt verwijdert uit het netwerk."
           }
         }
       },
@@ -875,8 +875,8 @@
     {
       "id": "ZB_Dimmer_2wire",
       "name": {
-        "en": "Dimmer Pro (Zigbee)",
-        "nl": "Inbouwdimmer Pro (Zigbee)"
+        "en": "Dimmer - 2 wire (Zigbee)",
+        "nl": "Inbouwdimmer 2-draads (Zigbee)"
       },
       "class": "light",
       "capabilities": [
@@ -961,15 +961,15 @@
         "learnmode": {
           "image": "/drivers/ZB_Dimmer_2wire/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_Dimmer_2wire/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         }
       },
@@ -1102,8 +1102,8 @@
     {
       "id": "ZB_Dimmer_3wire",
       "name": {
-        "en": "Dimmer Basic (Zigbee)",
-        "nl": "Inbouwdimmer Basic (Zigbee)"
+        "en": "Dimmer - 3 wire (Zigbee)",
+        "nl": "Inbouwdimmer 3-draads (Zigbee)"
       },
       "class": "light",
       "capabilities": [
@@ -1165,15 +1165,15 @@
         "learnmode": {
           "image": "/drivers/ZB_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee manieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee manieren:\n1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         }
       },
@@ -1391,15 +1391,15 @@
         "learnmode": {
           "image": "/drivers/ZB_Dimmer_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_Dimmer_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         }
       },
@@ -1602,8 +1602,8 @@
         "learnmode": {
           "image": "/drivers/ZB_LED-dimmer_CCT/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         }
       },
@@ -1726,8 +1726,8 @@
         "learnmode": {
           "image": "/drivers/ZB_LED-dimmer_RGBW/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         }
       },
@@ -1844,8 +1844,8 @@
         "learnmode": {
           "image": "/drivers/ZB_LED-dimmer_White/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the dimmer into inclusion mode: 1) Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         }
       },
@@ -1968,8 +1968,8 @@
         "learnmode": {
           "image": "/drivers/ZB_LED-lightbulb-Tunable/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the LED Filament light bulb switch the lamp on / off a total of 7 times, then the light flashes 6 times and the smart LED lamp is reset.  The inclusion to Homey will start directly after resetting the lamp.",
-            "nl": "Om de Smart LED Filament lamp toe te voegen, zet de lamp in totaal 7 keer aan / uit, vervolgens knippert het licht 6 keer en is de smart led lamp gereset. Het toevoegen aan Homey start direct na het resetten."
+            "en": "To include the LED Filament light bulb switch the lamp on / off a total of 7 times, then the light flashes 6 times and the smart LED lamp is reset. \nThe inclusion to Homey will start directly after resetting the lamp.",
+            "nl": "Om de Smart LED Filament lamp toe te voegen, zet de lamp in totaal 7 keer aan / uit, vervolgens knippert het licht 6 keer en is de smart led lamp gereset.\nHet toevoegen aan Homey start direct na het resetten."
           }
         }
       },
@@ -2085,8 +2085,8 @@
         "learnmode": {
           "image": "/drivers/ZB_MotionSensor/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the motion sensor to Homey:  Press the button 3 times.",
-            "nl": "Om de bewegingsensor aan Homey toe te voegen:  1. Druk de knop 3 keer in."
+            "en": "To include the motion sensor to Homey: \nPress the button 3 times.",
+            "nl": "Om de bewegingsensor aan Homey toe te voegen: \n1. Druk de knop 3 keer in."
           }
         }
       },
@@ -2509,8 +2509,8 @@
         "learnmode": {
           "image": "/drivers/ZB_Remote_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the remote to Homey:  Press and hold down the top I button until the LED turns on.  Immediately short press the top O button and the remote will be set to adding mode. ",
-            "nl": "Om de afstandsbediening aan Homey toe te voegen:  1. Houd de bovenste I knop ingedrukt totdat de LED aan gaat.  Druk direct daarna kort op of bovenste O knop en de afstandsbediening is in toevoegmodus gezet."
+            "en": "To include the remote to Homey: \nPress and hold down the top I button until the LED turns on. \nImmediately short press the top O button and the remote will be set to adding mode. ",
+            "nl": "Om de afstandsbediening aan Homey toe te voegen: \n1. Houd de bovenste I knop ingedrukt totdat de LED aan gaat. \nDruk direct daarna kort op of bovenste O knop en de afstandsbediening is in toevoegmodus gezet."
           }
         }
       },
@@ -2535,7 +2535,7 @@
         "en": "Smart outlet (Zigbee)",
         "nl": "Stekkerdoos (Zigbee)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff"
       ],
@@ -2640,8 +2640,8 @@
         "learnmode": {
           "image": "/drivers/ZB_Smart_outlet/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the smart outlet into inclusion mode: 1) Repower on the smart outlet, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the smart outlet, it will reset the smart outlet and activate the inclusion mode.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee manieren: 1) Stroom opnieuw inschakelen op de stekkerdoos, waarna de stekkerdoos automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de stekkedoos indrukken reset de stekkedoos en activeert de inclusion modus."
+            "en": "There are two methods to set the smart outlet into inclusion mode:\n1)Repower on the smart outlet, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the smart outlet, it will reset the smart outlet and activate the inclusion mode.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee manieren:\n1)Stroom opnieuw inschakelen op de stekkerdoos, waarna de stekkerdoos automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de stekkedoos indrukken reset de stekkedoos en activeert de inclusion modus."
           }
         },
         "devices": {
@@ -2744,7 +2744,7 @@
         "en": "Switch (Zigbee)",
         "nl": "Inbouwschakelaar (Zigbee)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff"
       ],
@@ -2791,8 +2791,10 @@
         "learnmode": {
           "image": "/drivers/ZB_Switch/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "instruction": {
+              "en": "There are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+              "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            }
           }
         }
       },
@@ -2884,7 +2886,7 @@
         "en": "Switch - 2 wire (Zigbee)",
         "nl": "Inbouwschakelaar 2-draads (Zigbee)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff"
       ],
@@ -2930,8 +2932,10 @@
         "learnmode": {
           "image": "/drivers/ZB_Switch_2wire/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "instruction": {
+              "en": "There are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+              "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            }
           }
         }
       },
@@ -3023,7 +3027,7 @@
         "en": "Double switch (Zigbee)",
         "nl": "Dubbele inbouwschakelaar (Zigbee)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff",
         "meter_power",
@@ -3109,8 +3113,10 @@
         "learnmode": {
           "image": "/drivers/ZB_Switch_Double/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "instruction": {
+              "en": "There are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+              "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            }
           }
         },
         "devices": {
@@ -3233,7 +3239,7 @@
         "en": "Switch with metering (Zigbee)",
         "nl": "Inbouwschakelaar met verbruiksmeting (Zigbee)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff",
         "meter_power",
@@ -3302,8 +3308,8 @@
         "learnmode": {
           "image": "/drivers/ZB_Switch_Metering/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "There are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the switch, it will reset the switch and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de schakelaar indrukken reset de schakelaar en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         }
       },
@@ -3491,7 +3497,7 @@
         "learnmode": {
           "image": "/drivers/ZB_Thermostat/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.  If pairing fails reset the device by select Reset item, then short press button F."
+            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.\n\nIf pairing fails reset the device by select Reset item, then short press button F."
           }
         }
       },
@@ -4204,15 +4210,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to adding mode.  The green LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet.  De groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to adding mode. \nThe green LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to removal mode.  The green LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet.  De groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to removal mode. \nThe green LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet. \nDe groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         }
       },
@@ -4306,15 +4312,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to adding mode.  The green LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet.  De groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to adding mode. \nThe green LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to removal mode.  The green LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet.  De groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to removal mode. \nThe green LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet. \nDe groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         }
       },
@@ -4441,15 +4447,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to adding mode.  The green LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet.  De groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to adding mode. \nThe green LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds.  The green LED indicator will turn on.  Release both buttons and immediately press the O button and the remote will be set to removal mode.  The green LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden.  De groene LED indicator gaat aan.  Laat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet.  De groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on. \nRelease both buttons and immediately press the O button and the remote will be set to removal mode. \nThe green LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan. \nLaat beide knoppen los en druk direct op de O knop en de wall controller is in verwijdermodus gezet. \nDe groene LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         }
       },
@@ -4530,15 +4536,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press the knob 5 times (within 1.5 seconds).  Within 2 seconds, press and hold the knob for over 3 seconds. The indicator will flash 3 times.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  Vijf keer de knop op de dimmer indrukken reset de dimmer .  Druk binnen 2 seconden de knop weer in en houdt ingedrukt voor meer dan 3 seconden. De indicator knippert 3 keer."
+            "en": "To include the wall controller to Homey: \nPress the knob 5 times (within 1.5 seconds). \nWithin 2 seconds, press and hold the knob for over 3 seconds.\nThe indicator will flash 3 times.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \nVijf keer de knop op de dimmer indrukken reset de dimmer . \nDruk binnen 2 seconden de knop weer in en houdt ingedrukt voor meer dan 3 seconden.\nDe indicator knippert 3 keer."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press the knob 5 times (within 1.5 seconds).  Within 2 seconds, press and hold the knob for over 3 seconds. The indicator will flash 3 times.",
-            "nl": "Om de wall controller te verwijderen:  Vijf keer de knop op de dimmer indrukken reset de dimmer .  Druk binnen 2 seconden de knop weer in en houdt ingedrukt voor meer dan 3 seconden. De indicator knippert 3 keer."
+            "en": "To remove the wall controller to Homey: \nPress the knob 5 times (within 1.5 seconds). \nWithin 2 seconds, press and hold the knob for over 3 seconds.\nThe indicator will flash 3 times.",
+            "nl": "Om de wall controller te verwijderen: \nVijf keer de knop op de dimmer indrukken reset de dimmer . \nDruk binnen 2 seconden de knop weer in en houdt ingedrukt voor meer dan 3 seconden.\nDe indicator knippert 3 keer."
           }
         }
       },
@@ -4633,15 +4639,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallPlug/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallPlug/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         }
       },
@@ -4721,15 +4727,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallPlugTemperature/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallPlugTemperature/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         }
       },
@@ -4794,15 +4800,15 @@
         "learnmode": {
           "image": "/drivers/ZW_CurtainController/assets/learnmode.svg",
           "instruction": {
-            "en": "1. Power on the in-wall switch and set it into inclusion mode.  There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Tripple press the reset button on the switch, it will set the plug into inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "1. Schakel de inbouwdimmer in en activeer de inclusion modus.  De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Drie keer de reset knop op de schakelaar indrukken activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "1. Power on the in-wall switch and set it into inclusion mode. \nThere are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2) Tripple press the reset button on the switch, it will set the plug into inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "1. Schakel de inbouwdimmer in en activeer de inclusion modus. \nDe inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2) Drie keer de reset knop op de schakelaar indrukken activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_CurtainController/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the switch, triple press the reset button.  The switch will be set to exclusion mode, and waiting to be excluded, then the switch will be excluded to the network.",
-            "nl": "Om de schakelaar te verwijderen, druk drie keer de reset knop op de schakelaar in.   De exclusion modus van de schakelaar wordt geactiveerd en de schakelaar wordt verwijdert uit het netwerk."
+            "en": "To remove the switch, triple press the reset button. \nThe switch will be set to exclusion mode, and waiting to be excluded, then the switch will be excluded to the network.",
+            "nl": "Om de schakelaar te verwijderen, druk drie keer de reset knop op de schakelaar in. \n De exclusion modus van de schakelaar wordt geactiveerd en de schakelaar wordt verwijdert uit het netwerk."
           }
         },
         "associationGroups": [
@@ -4819,7 +4825,142 @@
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Button behaviour",
+            "nl": "Gedrag knoppen"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "zwave": {
+                "index": 4,
+                "size": 1
+              },
+              "id": "external_switch_type",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type",
+                "nl": "Schakelaar type"
+              },
+              "hint": {
+                "en": "This parameter (4) determines what device is operating the switch.",
+                "nl": "Deze parameter (4) bepaalt welk apparaat de schakelaar bestuurt."
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch",
+                    "nl": "Pulsdrukschakelaar"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch",
+                    "nl": "Tuimelschakelaar"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "3-way switch",
+                    "nl": "Hotelschakelaar"
+                  }
+                }
+              ]
+            },
+            {
+              "zwave": {
+                "index": 4,
+                "size": 1
+              },
+              "id": "external_switch_inclusion",
+              "value": true,
+              "label": {
+                "en": "Enable external switch",
+                "nl": "External schakelaar gebruiken"
+              },
+              "hint": {
+                "en": "This parameter (4) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter (4) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+              },
+              "type": "checkbox"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other",
+            "nl": "Overige"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "save_state",
+              "value": "0",
+              "label": {
+                "en": "Restore state after power failure",
+                "nl": "Herstel status na stroomonderbreking"
+              },
+              "hint": {
+                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+              },
+              "zwave": {
+                "index": 2,
+                "size": 1
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Turn off light",
+                    "nl": "Schakel de lamp uit"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Turn on light",
+                    "nl": "Schakel de lamp in"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Restore state",
+                    "nl": "Herstel toestand"
+                  }
+                }
+              ],
+              "type": "dropdown"
+            },
+            {
+              "id": "send_basic_report",
+              "value": true,
+              "label": {
+                "en": "Send `BASIC report`",
+                "nl": "Stuur `BASIC report`"
+              },
+              "hint": {
+                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+              },
+              "zwave": {
+                "index": 3,
+                "size": 1
+              },
+              "type": "checkbox"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ZW_Dimmer_2wire",
@@ -4886,15 +5027,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_2wire/assets/learnmode.svg",
           "instruction": {
-            "en": "Wait until the connected light has reached maximum brightness.  Triple press the reset button on the dimmer, it will set the plug into inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt.  Drie keer de reset knop op de dimmer indrukken activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "Wait until the connected light has reached maximum brightness. \nTriple press the reset button on the dimmer, it will set the plug into inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt. \nDrie keer de reset knop op de dimmer indrukken activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Dimmer_2wire/assets/learnmode.svg",
           "instruction": {
-            "en": "To first reset the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To first reset the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         },
         "associationGroups": [
@@ -5252,19 +5393,19 @@
               "type": "dropdown"
             },
             {
-              "zwave": {
-                "index": 10,
-                "size": 1
-              },
               "id": "detect_load_type",
               "type": "dropdown",
+              "zwave": {
+                "index": 8,
+                "size": 1
+              },
               "label": {
                 "en": "Detect Load type",
                 "nl": "Schakelaar type"
               },
               "hint": {
-                "en": "This parameter (10) determines if load type, minimum brightness, maximum brightness are detected during re-power.",
-                "nl": "Deze parameter (10) bepaalt of het lamp type, minimale helderheid, maximale helderheid bepaald wordt tijdens het inschakelen."
+                "en": "This parameter (8) determines if load type, minimum brightness, maximum brightness are detected during re-power.",
+                "nl": "Deze parameter (8) bepaalt of het lamp type, minimale helderheid, maximale helderheid bepaald wordt tijdens het inschakelen."
               },
               "value": "0",
               "values": [
@@ -5343,15 +5484,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
-            "en": "Wait until the connected light has reached maximum brightness.  Triple press the reset button on the dimmer, it will set the plug into inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt.  Drie keer de reset knop op de dimmer indrukken activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "Wait until the connected light has reached maximum brightness. \nTriple press the reset button on the dimmer, it will set the plug into inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt. \nDrie keer de reset knop op de dimmer indrukken activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
-            "en": "To first reset the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To first reset the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         },
         "associationGroups": [
@@ -5616,15 +5757,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "Wait until the connected light has reached maximum brightness.  Tripple press the reset button on the dimmer, it will set the plug into inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt.  Drie keer de reset knop op de dimmer indrukken activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "Wait until the connected light has reached maximum brightness. \nTripple press the reset button on the dimmer, it will set the plug into inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "Wacht totdat de aangesloten lamp maximale helderheid heeft bereikt. \nDrie keer de reset knop op de dimmer indrukken activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Dimmer_rotary/assets/learnmode.svg",
           "instruction": {
-            "en": "To first reset the dimmer, triple press the reset button.  The dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in.   De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To first reset the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer eerst te resetten, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
           }
         },
         "associationGroups": [
@@ -6069,8 +6210,8 @@
         "learnmode": {
           "image": "/drivers/ZW_LED-dimmer_White/assets/learnmode.svg",
           "instruction": {
-            "en": "Power on the LED dimmer, make sure the LED dimmer does not belong to any Z-Wave network. 1) When the connected LED light flashes quickly for 6 seconds, it means the LED dimmer does not belong to any network. Triple press the 'Inclusion/Exclusion' button. 2) When the connected LED light is under solid 'on' status, it means the LED dimmer has already been included into a network. First you have to set the LED dimmer into exclusion mode, once excluded, it will be set into inclusion mode automatically, and waiting to be included. The connected LED light stays solid on 3s to indicate successful inclusion.",
-            "nl": "Schakel de LED-dimmer in, zorg ervoor dat de LED-dimmer niet tot een Z-Wave-netwerk behoort.  1) Wanneer de aangesloten LED-lamp snel knippert gedurende 6 seconden, betekent dit dat de LED-dimmer niet tot een netwerk behoort. Druk driemaal op de knop 'Inclusion/Exclusion'.  2) Wanneer de aangesloten LED-lamp continu brandt, betekent dit dat de LED-dimmer al is opgenomen in een Z-Wave netwerk. Eerst moet je de LED-dimmer in de 'exclusion' modus zetten, eenmaal uitgesloten, wordt deze automatisch in de inclusiemodus gezet en wacht op opname. De aangesloten LED-lamp blijft stabiel op 3s bij succesvolle 'inclusion'."
+            "en": "Power on the LED dimmer, make sure the LED dimmer does not belong to any Z-Wave network.\n\t1) When the connected LED light flashes quickly for 6 seconds, it means the LED dimmer does not belong to any network. Triple press the 'Inclusion/Exclusion' button.\n\t2) When the connected LED light is under solid 'on' status, it means the LED dimmer has already been included into a network. First you have to set the LED dimmer into exclusion mode, once excluded, it will be set into inclusion mode automatically, and waiting to be included.\nThe connected LED light stays solid on 3s to indicate successful inclusion.",
+            "nl": "Schakel de LED-dimmer in, zorg ervoor dat de LED-dimmer niet tot een Z-Wave-netwerk behoort. \n\t1) Wanneer de aangesloten LED-lamp snel knippert gedurende 6 seconden, betekent dit dat de LED-dimmer niet tot een netwerk behoort. Druk driemaal op de knop 'Inclusion/Exclusion'. \n\t2) Wanneer de aangesloten LED-lamp continu brandt, betekent dit dat de LED-dimmer al is opgenomen in een Z-Wave netwerk. Eerst moet je de LED-dimmer in de 'exclusion' modus zetten, eenmaal uitgesloten, wordt deze automatisch in de inclusiemodus gezet en wacht op opname.\nDe aangesloten LED-lamp blijft stabiel op 3s bij succesvolle 'inclusion'."
           }
         },
         "unlearnmode": {
@@ -6317,15 +6458,15 @@
         "learnmode": {
           "image": "/drivers/ZW_MotionSensor/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the motion sensor to Homey:  Press the button 3 times.  When a DSK code is asked, enter the first 5 digits mentioned on the sticker (or '00000')",
-            "nl": "Om de bewegingsensor aan Homey toe te voegen:  1. Druk de knop 3 keer in. Wanneer gevraagd worden naar een DSK code, voer dan de eerste 5 cijfers die op de sticker staan in (of '00000')"
+            "en": "To include the motion sensor to Homey: \nPress the button 3 times. \nWhen a DSK code is asked, enter the first 5 digits mentioned on the sticker (or '00000')",
+            "nl": "Om de bewegingsensor aan Homey toe te voegen: \n1. Druk de knop 3 keer in.\nWanneer gevraagd worden naar een DSK code, voer dan de eerste 5 cijfers die op de sticker staan in (of '00000')"
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_MotionSensor/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the motion sensor to Homey:  Press the button 3 times.",
-            "nl": "Om de bewegingsensor van  Homey te te verwijderen:  1. Druk de knop 3 keer in."
+            "en": "To remove the motion sensor to Homey: \nPress the button 3 times.",
+            "nl": "Om de bewegingsensor van  Homey te te verwijderen: \n1. Druk de knop 3 keer in."
           }
         },
         "associationGroups": [
@@ -6820,15 +6961,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both I and O (upper rockers) over 3 seconds.  The red LED indicator will turn on and the remote will be set to adding mode.  The red LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden.  De rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De rode LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "Press and hold down both I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to adding mode. \nThe red LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe rode LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both buttons I and O (upper rockers) over 3 seconds.  The red LED indicator will turn on and the remote will be set to removal mode.  Wait until the red LED indicator is blinking 4 times.",
-            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden.  De rode LED indicator gaat aan en de wall controller is in verwijdermodus gezet.  Wacht tot de rode LED indicator 4 keer knippert."
+            "en": "Press and hold down both buttons I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to removal mode. \nWait until the red LED indicator is blinking 4 times.",
+            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in verwijdermodus gezet. \nWacht tot de rode LED indicator 4 keer knippert."
           }
         },
         "associationGroups": [
@@ -6837,32 +6978,32 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 1 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 1 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 1 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 1 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "3": {
             "hint": {
-              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "4": {
             "hint": {
-              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "5": {
             "hint": {
-              "en": "Group 4 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 4 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 4 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 4 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           }
         }
@@ -6924,15 +7065,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Remote_5/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both I and O (upper rockers) over 3 seconds.  The red LED indicator will turn on and the remote will be set to adding mode.  The red LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden.  De rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De rode LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "Press and hold down both I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to adding mode. \nThe red LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe rode LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Remote_5/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both buttons I and O (upper rockers) over 3 seconds.  The red LED indicator will turn on and the remote will be set to removal mode.  Wait until the red LED indicator is blinking 4 times.",
-            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden.  De rode LED indicator gaat aan en de wall controller is in verwijdermodus gezet.  Wacht tot de rode LED indicator 4 keer knippert."
+            "en": "Press and hold down both buttons I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to removal mode. \nWait until the red LED indicator is blinking 4 times.",
+            "nl": "Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in verwijdermodus gezet. \nWacht tot de rode LED indicator 4 keer knippert."
           }
         },
         "associationGroups": [
@@ -6941,38 +7082,38 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 1 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 1 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 1 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 1 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "3": {
             "hint": {
-              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "4": {
             "hint": {
-              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "5": {
             "hint": {
-              "en": "Group 4: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 4: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 4: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 4: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "6": {
             "hint": {
-              "en": "Group 5 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 5 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 5 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 5 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           }
         }
@@ -6998,7 +7139,7 @@
         "en": "Switch (Z-wave)",
         "nl": "Inbouwschakelaar (Z-wave)"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [
         "onoff"
       ],
@@ -7029,15 +7170,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Switch/assets/learnmode.svg",
           "instruction": {
-            "en": "1. Power on the in-wall switch and set it into inclusion mode.  There are two methods to set the in-wall switch into inclusion mode: 1) Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included. 2) Tripple press the reset button on the switch, it will set the plug into inclusion mode. The connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "1. Schakel de inbouwdimmer in en activeer de inclusion modus.  De inclusion modus wordt geactiveerd op de volgende twee mmanieren: 1) Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden.  2) Drie keer de reset knop op de schakelaar indrukken activeert de inclusion modus. De aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "1. Power on the in-wall switch and set it into inclusion mode. \nThere are two methods to set the in-wall switch into inclusion mode:\n1)Repower on the switch, it will be set into inclusion mode automatically, and waiting to be included.\n2) Tripple press the reset button on the switch, it will set the plug into inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "1. Schakel de inbouwdimmer in en activeer de inclusion modus. \nDe inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de schakelaar, waarna de schakelaar automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2) Drie keer de reset knop op de schakelaar indrukken activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Switch/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the switch, triple press the reset button.  The switch will be set to exclusion mode, and waiting to be excluded, then the switch will be excluded to the network.",
-            "nl": "Om de schakelaar te verwijderen, druk drie keer de reset knop op de schakelaar in.   De exclusion modus van de schakelaar wordt geactiveerd en de schakelaar wordt verwijdert uit het netwerk."
+            "en": "To remove the switch, triple press the reset button. \nThe switch will be set to exclusion mode, and waiting to be excluded, then the switch will be excluded to the network.",
+            "nl": "Om de schakelaar te verwijderen, druk drie keer de reset knop op de schakelaar in. \n De exclusion modus van de schakelaar wordt geactiveerd en de schakelaar wordt verwijdert uit het netwerk."
           }
         },
         "associationGroups": [
@@ -7063,7 +7204,7 @@
           "children": [
             {
               "zwave": {
-                "index": 5,
+                "index": 4,
                 "size": 1
               },
               "id": "external_switch_type",
@@ -7073,8 +7214,8 @@
                 "nl": "Schakelaar type"
               },
               "hint": {
-                "en": "This parameter (5) determines what device is operating the switch.",
-                "nl": "Deze parameter (5) bepaalt welk apparaat de schakelaar bestuurt."
+                "en": "This parameter (4) determines what device is operating the switch.",
+                "nl": "Deze parameter (4) bepaalt welk apparaat de schakelaar bestuurt."
               },
               "value": "0",
               "values": [
@@ -7284,15 +7425,15 @@
         "learnmode": {
           "image": "/drivers/ZW_Thermostat/assets/learnmode.svg",
           "instruction": {
-            "en": "Continue to select “Add”, then short press the F button, the device will send out inclusion request, “Status” will show “Inclusion...”.   If included successfully, “Status” will show “Inclusion OK” and device ID.",
-            "nl": "Vervolg door de “Add” optie te selecteren, druk vervolgens kort op de knop F, het apparaat verzendt een opnameverzoek, “Status” toont “Inclusion...”.   Indien succesvol opgenomen, zal “Status” “Inclusion OK” en apparaat-ID tonen."
+            "en": "Continue to select “Add”, then short press the F button, the device will send out inclusion request, “Status” will show “Inclusion...”. \n If included successfully, “Status” will show “Inclusion OK” and device ID.",
+            "nl": "Vervolg door de “Add” optie te selecteren, druk vervolgens kort op de knop F, het apparaat verzendt een opnameverzoek, “Status” toont “Inclusion...”. \n Indien succesvol opgenomen, zal “Status” “Inclusion OK” en apparaat-ID tonen."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_Thermostat/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Select and enter the ZWAVE SET menu.   First select “Remove”, then short press button F, the device will send out exclusion request, “Status” will show “Exclusion...”.   If excluded successfully, “Remove” will show “Exclusion OK” and device ID will be showed as 0.",
-            "nl": "Schakel het apparaat eerst in de UIT-modus en houd vervolgens de knoppen OMHOOG en OMLAAG tegelijkertijd gedurende meer dan 5 seconden ingedrukt om het menu Instellingen te openen. Selecteer en open het menu ZWAVE SET.   Selecteer eerst “Remove” en vervolgens kort druk op knop F, het apparaat verzendt een uitsluitingsverzoek, “Status” toont “Exclusion...”.   Indien succesvol uitgesloten, toont “Status” “Exclusion OK” en wordt de apparaat-ID weergegeven als 0."
+            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Select and enter the ZWAVE SET menu. \n First select “Remove”, then short press button F, the device will send out exclusion request, “Status” will show “Exclusion...”. \n If excluded successfully, “Remove” will show “Exclusion OK” and device ID will be showed as 0.",
+            "nl": "Schakel het apparaat eerst in de UIT-modus en houd vervolgens de knoppen OMHOOG en OMLAAG tegelijkertijd gedurende meer dan 5 seconden ingedrukt om het menu Instellingen te openen. Selecteer en open het menu ZWAVE SET. \n Selecteer eerst “Remove” en vervolgens kort druk op knop F, het apparaat verzendt een uitsluitingsverzoek, “Status” toont “Exclusion...”. \n Indien succesvol uitgesloten, toont “Status” “Exclusion OK” en wordt de apparaat-ID weergegeven als 0."
           }
         },
         "associationGroups": [
@@ -7302,8 +7443,8 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "1.Send Command Class DEVICE_RESET_LOCALLY_NOTIFICATION to associated devices of this group when factory reset the device. 2.Send Command Class THERMOSTAT_SETPOINT_REPORT, THERMOSTAT_MODE_REPORT, THERMOSTAT_OPERATING_STATE_REPORT to associated devices of this group When operation mode and temperature change. 3.Send Command Class NOTIFICATION_REPORT to associated devices of this group when over current, over heat detected 4.Send Command Class METER_REPORT to associated devices of this group to report metering parameters.",
-              "nl": "1.Stuur Command Class DEVICE_RESET_LOCALLY_NOTIFICATION naar gekoppelde apparaten van deze groep wanneer het apparaat wordt teruggezet naar de fabrieksinstellingen. 2.Stuur Command Class THERMOSTAT_SETPOINT_REPORT, THERMOSTAT_MODE_REPORT, THERMOSTAT_OPERATING_STATE_REPORT naar gekoppelde apparaten van deze groep wanneer de bedrijfsmodus en temperatuur veranderen. 3. Stuur Command Class NOTIFICATION_REPORT naar gekoppelde apparaten van deze groep wanneer overstroom of oververhitting is gedetecteerd 4.Stuur Command Class METER_REPORT naar gekoppelde apparaten van deze groep om meetparameters te rapporteren."
+              "en": "1.Send Command Class DEVICE_RESET_LOCALLY_NOTIFICATION to associated devices of this group when factory reset the device.\n2.Send Command Class THERMOSTAT_SETPOINT_REPORT, THERMOSTAT_MODE_REPORT, THERMOSTAT_OPERATING_STATE_REPORT to associated devices of this group When operation mode and temperature change.\n3.Send Command Class NOTIFICATION_REPORT to associated devices of this group when over current, over heat detected\n4.Send Command Class METER_REPORT to associated devices of this group to report metering parameters.",
+              "nl": "1.Stuur Command Class DEVICE_RESET_LOCALLY_NOTIFICATION naar gekoppelde apparaten van deze groep wanneer het apparaat wordt teruggezet naar de fabrieksinstellingen.\n2.Stuur Command Class THERMOSTAT_SETPOINT_REPORT, THERMOSTAT_MODE_REPORT, THERMOSTAT_OPERATING_STATE_REPORT naar gekoppelde apparaten van deze groep wanneer de bedrijfsmodus en temperatuur veranderen.\n3. Stuur Command Class NOTIFICATION_REPORT naar gekoppelde apparaten van deze groep wanneer overstroom of oververhitting is gedetecteerd\n4.Stuur Command Class METER_REPORT naar gekoppelde apparaten van deze groep om meetparameters te rapporteren."
             }
           },
           "2": {
@@ -7970,15 +8111,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         },
         "associationGroups": [
@@ -7987,14 +8128,14 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           }
         }
@@ -8049,15 +8190,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         },
         "associationGroups": [
@@ -8066,20 +8207,20 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "3": {
             "hint": {
-              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           }
         }
@@ -8140,15 +8281,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         },
         "associationGroups": [
@@ -8157,32 +8298,32 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "3": {
             "hint": {
-              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "4": {
             "hint": {
-              "en": "Group 4: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 4: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 4: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 4: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           },
           "5": {
             "hint": {
-              "en": "Group 5 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: Short press: on/off (BASIC_SET) command  Long press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
-              "nl": "Groep 5 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: Kort ingedrukt: on/off (BASIC_SET) commando Lang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+              "en": "Group 5 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 5 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
             }
           }
         }
@@ -8238,15 +8379,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_RGBW/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey:  Press and hold down both buttons Power and Brightness of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen:  1. Hou beide knoppen  en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons Power and Brightness of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen  en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_RGBW/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey:  Press and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds.  The blue LED indicator will turn on and the remote will be set to adding mode.  The blue LED indicator blinking 4 times will indicate successful removal.",
-            "nl": "Om de wall controller van Homey te verwijderen:  1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden.  De blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet.  De blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful removal.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het verwijderen succesvol is."
           }
         },
         "associationGroups": [
@@ -8255,14 +8396,14 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group.  Default: 1 (Homey's ID)",
-              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep.  Standaard: 1 (Homey's ID)"
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
             }
           },
           "2": {
             "hint": {
-              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:  Short press power button: send ON/OFF command (BASIC_SET)  Press and hold down brightness button (sun): send light intensity increase/decrease command (Multilevel V4)  Short press W / RGB button : turn on/off white/RGB channel (Color Switch Set)  Press and hold down W / RGB button: adjust intensity of white/RGB channel (Color Switch Start Level Change)",
-              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:  Kort indrukken AAN/UIT knop: stuur ON/OFF commando (BASIC_SET)  Ingedrukt houden dim knop (zon): stuur dim intensiteit verhoog/verlaag commando (Multilevel V4) Kort indrukken W / RGB knop : schakel wit / RGB kanaal in of uit (Color Switch Set)  Ingedrukt houden W / RGB knop: pas intensiteit aan van wit / RGB kanaal (Color Switch Start Level Change)"
+              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: \nShort press power button: send ON/OFF command (BASIC_SET) \nPress and hold down brightness button (sun): send light intensity increase/decrease command (Multilevel V4) \nShort press W / RGB button : turn on/off white/RGB channel (Color Switch Set) \nPress and hold down W / RGB button: adjust intensity of white/RGB channel (Color Switch Start Level Change)",
+              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: \nKort indrukken AAN/UIT knop: stuur ON/OFF commando (BASIC_SET) \nIngedrukt houden dim knop (zon): stuur dim intensiteit verhoog/verlaag commando (Multilevel V4)\nKort indrukken W / RGB knop : schakel wit / RGB kanaal in of uit (Color Switch Set) \nIngedrukt houden W / RGB knop: pas intensiteit aan van wit / RGB kanaal (Color Switch Start Level Change)"
             }
           }
         }
@@ -8337,15 +8478,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "Press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
           "instruction": {
-            "en": "To reset the wall plug, press the button 3 times (within 1.5 seconds) on the wall plug. The LED indicator will flash white fast.",
-            "nl": "Om de tussenstekker te resetten, druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker. De witte LED indicator knippert vervolgens snel."
+            "en": "To reset the wall plug, press the button 3 times (within 1.5 seconds) on the wall plug.\nThe LED indicator will flash white fast.",
+            "nl": "Om de tussenstekker te resetten, druk drie keer (binnen 1.5 seconden) op de knop van de tussenstekker.\nDe witte LED indicator knippert vervolgens snel."
           }
         },
         "associationGroups": [

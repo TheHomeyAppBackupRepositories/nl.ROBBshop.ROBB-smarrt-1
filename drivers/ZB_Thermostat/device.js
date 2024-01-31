@@ -40,7 +40,7 @@ class ZBThermostatDevice extends ZigBeeDevice {
     // debug(true);
 
     // enable debugging
-    this.enableDebug();
+    // this.enableDebug();
 
     // print the node's info to the console
     // this.printNode();
@@ -49,25 +49,27 @@ class ZBThermostatDevice extends ZigBeeDevice {
 
     this._thermostatCluster = this.zclNode.endpoints[1].clusters[ROBBSpecificThermostatCluster.NAME];
 
-    if(this.hasCapability('target_temperature')) {
-      this._thermostatCluster.on('attr.occupiedHeatingSetpoint', this.onTargetTemperatureAttributeReport.bind(this, 'occupiedHeatingSetpoint', 'report'));
-      this._thermostatCluster.on('attr.unoccupiedHeatingSetpoint', this.onTargetTemperatureAttributeReport.bind(this, 'unoccupiedHeatingSetpoint', 'report'));
+    //let tempSetting = this._getManifestSetting('over_current_alarm_level');
+    //const tempParser = eval(tempSetting.zigbee.settingParser);
+    // this.log('SETTINGS', tempSetting.zigbee, tempSetting.zigbee.settingParser, tempParser(5));
+    /*
+    target_temperature
+    1. define listener for updating received attribute occupiedHeatingSetpoint
+    2. define listener for updating received attribute unoccupiedHeatingSetpoint
+    3. registerCapabilityListener for target_temperature to trigger based on known thermostat Mode
+        if occupied -> set occupiedHeatingSetpoint, else set unoccupiedHeatingSetpoint
+    */
 
-      // occupied: auto / manual / dry
+    if(this.hasCapability('target_temperature')) {
+      this._thermostatCluster.on('attr.occupiedHeatingSetpoint', this.onTargetTemperatureAttributeReport.bind(this, 'occupiedHeatingSetpoint'));
+      this._thermostatCluster.on('attr.unoccupiedHeatingSetpoint', this.onTargetTemperatureAttributeReport.bind(this, 'unoccupiedHeatingSetpoint'));
+
       this.registerCapabilityListener('target_temperature',
         async (value, opts) => {
-          const thermostatMode = this.getCapabilityValue('thermostat_mode_custom');
-          if (thermostatMode === 'auto' || thermostatMode === 'off') {
-            throw new Error(`Target temperature can't be adjusted when the thermostat is in ${thermostatMode} mode`);
-          } else {
-            // let { occupancy } = await this._thermostatCluster.readAttributes(['occupancy']).catch(this.error);
-            // const thermostatOccupancyState = !occupancy.occupied ? this.getCapabilityValue('thermostat_mode_custom') !== 'away' : occupancy.occupied;
-            const thermostatOccupancyState = this.getCapabilityValue('thermostat_mode_custom') !== 'away';
-            let payload = thermostatOccupancyState ? { occupiedHeatingSetpoint : value * 100, } : { unoccupiedHeatingSetpoint : value * 100, }
-            this.log('Setting target temperature', value, payload, thermostatOccupancyState);
-            return this._thermostatCluster.writeAttributes(payload)
-          }
-
+          let { occupancy } = await this._thermostatCluster.readAttributes('occupancy');
+          let payload = occupancy.occupied ? { occupiedHeatingSetpoint : value * 100, } : { unoccupiedHeatingSetpoint : value * 100, }
+          this.log('Setting target temperature', value, payload, occupancy, occupancy.occupied);
+          return this._thermostatCluster.writeAttributes(payload)
         })
 
     }
@@ -117,27 +119,13 @@ class ZBThermostatDevice extends ZigBeeDevice {
 
           // systemMode 'heat' is reported when in manual or in away mode
           if(value === 'heat') {
-            let { awayMode } = await this._thermostatCluster.readAttributes(['awayMode']).catch(this.error);
+            let { awayMode } = await this._thermostatCluster.readAttributes('awayMode');
 
             if (awayMode === 'awayModeActive') {
               mode = 'away';
             }
           }
           this.log('systemMode report', value, mode);
-          if (mode === 'away') {
-            // update the target_temperature based on the new mode
-            let {unoccupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes(['unoccupiedHeatingSetpoint']).catch(this.error);
-
-            this.onTargetTemperatureAttributeReport('unoccupiedHeatingSetpoint', mode, unoccupiedHeatingSetpoint);
-          } else if ( mode !== 'off') {
-            // update the target_temperature based on the new mode
-            let {occupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes(['occupiedHeatingSetpoint']).catch(this.error);
-
-            this.onTargetTemperatureAttributeReport('occupiedHeatingSetpoint', mode, occupiedHeatingSetpoint);
-          }
-
-
-          if (value === 'off') this.setCapabilityValue('target_temperature', null).catch(this.error);
 
           await this.driver.triggerThermostatModeChangedTo.trigger(this, null, {mode: mode});
 
@@ -153,12 +141,11 @@ class ZBThermostatDevice extends ZigBeeDevice {
           let payload = { awayMode: 'awayModeActive'};
           await this._thermostatCluster.writeAttributes(payload);
 
-          // update the target_temperature based on the new mode
-          let {unoccupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes(['unoccupiedHeatingSetpoint']).catch(this.error);
+          let {unoccupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes('unoccupiedHeatingSetpoint');
 
           this.driver.triggerThermostatModeChangedTo.trigger(this, null, {mode: 'away'});
 
-          return this.onTargetTemperatureAttributeReport('unoccupiedHeatingSetpoint', value, unoccupiedHeatingSetpoint);
+          return this.onTargetTemperatureAttributeReport('unoccupiedHeatingSetpoint', unoccupiedHeatingSetpoint);
         }
 
         // If current mode is away, first disable away mode and then set the thermostat Mode
@@ -166,17 +153,10 @@ class ZBThermostatDevice extends ZigBeeDevice {
           let payload = { awayMode: 'awayModeInActive'};
           await this._thermostatCluster.writeAttributes(payload);
         }
-
-        // update the target_temperature based on the new mode
-        if (value !== 'off') {
-          let {occupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes(['occupiedHeatingSetpoint']).catch(this.error);
-          this.onTargetTemperatureAttributeReport('occupiedHeatingSetpoint', value, occupiedHeatingSetpoint);
-        } else {
-          this.setCapabilityValue('target_temperature', null).catch(this.error);
-        };
+        let {occupiedHeatingSetpoint} = await this._thermostatCluster.readAttributes('occupiedHeatingSetpoint');
+        this.onTargetTemperatureAttributeReport('occupiedHeatingSetpoint', occupiedHeatingSetpoint);
 
         this.driver.triggerThermostatModeChangedTo.trigger(this, null, {mode: Capability2Mode[value]});
-
 
         return this._thermostatCluster.writeAttributes({ systemMode: Capability2Mode[value],})
       })
@@ -210,38 +190,31 @@ class ZBThermostatDevice extends ZigBeeDevice {
 
     }
 
-    if (this.hasCapability('measure_power')) {
-
-      // Define electricaMeasurement cluster attribute reporting and parsing options. Do NOT await this.initElectricalMeasurementClusterAttributeReporting()
-      if (!this.activePowerFactor) this.initElectricalMeasurementClusterAttributeReporting({ zclNode });
-
-
-      this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT, {
-        /*reportOpts: {
-          configureAttributeReporting: {
-            minInterval: 5, // No minimum reporting interval
-            maxInterval: this.getSetting('reporting_interval_power') || 300, // Maximally every ~16 hours
-            minChange: this.getSetting('reporting_threshold_power') || 5, // Report when value changed by 5
-          },
-        },*/
-        endpoint: this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT),
-      });
-
-    }
-
     if (this.hasCapability('meter_power')) {
 
-      // Define Metering cluster attribute reporting and parsing options. Do NOT await this.initMeteringClusterAttributeReporting()
-      if (!this.meteringFactor) this.initMeteringClusterAttributeReporting({ zclNode });
+      if (!this.referenceCurrentSummationDelivered) {
+        if (this.isFirstInit()) {
+          await this.setRefCurrentSummationDelivered();
+          this.setCapabilityValue('meter_power', 0);
+          this.debug('Set referenceCurrentSummationDelivered by reading attributes:', this.referenceCurrentSummationDelivered);
+        } else if (!this.getStoreValue('referenceCurrentSummationDelivered')) {
+          this.referenceCurrentSumDelivered = 0;
+          this.debug('storeValue for referenceCurrentSummationDelivered not defined, set to 0');
+        } else {
+          this.referenceCurrentSummationDelivered = this.getStoreValue('referenceCurrentSummationDelivered');
+          this.debug('retrieving referenceCurrentSummationDelivered from Store:', this.referenceCurrentSummationDelivered);
+        }
+        this.log('Defined referenceCurrentSummationDelivered:', this.referenceCurrentSummationDelivered);
+      }
 
       this.registerCapability('meter_power', CLUSTER.METERING, {
-        /*reportOpts: {
+        reportOpts: {
           configureAttributeReporting: {
             minInterval: 60, // No minimum reporting interval
             maxInterval: 3600, // Maximally every ~16 hours
             minChange: 1, // Report when value changed by 5
           },
-        },*/
+        },
         reportParser(value) {
           const meteringFactor = this.meteringFactor || 1;
           const referenceCurrentSummationDelivered = this.referenceCurrentSummationDelivered || 0;
@@ -257,7 +230,7 @@ class ZBThermostatDevice extends ZigBeeDevice {
           await this.setRefCurrentSummationDelivered();
 
           // set meter_power capability value
-          this.setCapabilityValue('meter_power', 0).catch(this.error);
+          this.setCapabilityValue('meter_power', 0);
           this.log('MaintenanceAction | Reset meter - completed successfully');
         } catch (err) {
           this.debug('MaintenanceAction | Reset meter - ERROR: Could not complete maintenanceAction:', err);
@@ -269,103 +242,19 @@ class ZBThermostatDevice extends ZigBeeDevice {
 
     }
 
-  }
+    if (this.hasCapability('measure_power')) {
 
-  async initMeteringClusterAttributeReporting({ zclNode }) {
-    if (!this.getStoreValue('meteringFactor')) {
-      try {
-        const { multiplier, divisor } = await this.zclNode.endpoints[this.getClusterEndpoint(CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(['multiplier', 'divisor']).catch(this.error);
-        this.meteringFactor = multiplier / divisor;
-        this.setStoreValue('meteringFactor', this.meteringFactor).catch(this.error);
-        this.debug('meteringFactor read from multiplier and divisor attributes:', multiplier, divisor, this.meteringFactor);
-      } catch (error) {
-        this.meteringFactor = 1/3600000 ; // fall back, not stored. Will be retried at the next onNodeInit
-        this.debug('meteringFactor NOT read from multiplier and divisor attributes, due to', error);
-      }
-    } else {
-      this.meteringFactor = this.getStoreValue('meteringFactor');
-      this.debug('meteringFactor retrieved from Store:', this.meteringFactor);
+    this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT, {
+        reportOpts: {
+          configureAttributeReporting: {
+            minInterval: 10, // No minimum reporting interval
+            maxInterval: this.getSetting('reporting_interval_power') || 300, // Maximally every ~16 hours
+            minChange: this.getSetting('reporting_threshold_power') || 5, // Report when value changed by 5
+          },
+        },
+        endpoint: this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT),
+      });
     }
-    this.log('Defined meteringFactor:', this.meteringFactor);
-    this.debug('--  initializing attribute reporting for the metering cluster');
-    await this.configureAttributeReporting([{
-      cluster: CLUSTER.METERING,
-      attributeName: 'currentSummationDelivered',
-      minInterval: 300,
-      maxInterval: 3600,
-      minChange: 0.01 / this.meteringFactor,
-      endpointId: this.getClusterEndpoint(CLUSTER.METERING),
-    }]).catch(this.error);
-
-    this.debug('--  initializing referenceCurrentSummationDelivered for the meteringCluster');
-    if (this.isFirstInit()) {
-      await this.setRefCurrentSummationDelivered();
-      this.setCapabilityValue('meter_power', 0).catch(this.error);
-      this.debug('Set referenceCurrentSummationDelivered by reading attributes:', this.referenceCurrentSummationDelivered);
-    } else if (!this.getStoreValue('referenceCurrentSummationDelivered')) {
-      this.referenceCurrentSummationDelivered = 0;
-      this.debug('storeValue for referenceCurrentSummationDelivered not defined, set to 0');
-    } else {
-      this.referenceCurrentSummationDelivered = this.getStoreValue('referenceCurrentSummationDelivered');
-      this.debug('retrieving referenceCurrentSummationDelivered from Store:', this.referenceCurrentSummationDelivered);
-    }
-    this.log('Defined referenceCurrentSummationDelivered:', this.referenceCurrentSummationDelivered);
-  }
-
-  async initElectricalMeasurementClusterAttributeReporting({ zclNode }) {
-    if (!this.getStoreValue('activePowerFactor')) {
-      try {
-        const {acPowerMultiplier, acPowerDivisor} = await this.zclNode.endpoints[this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME]
-        .readAttributes(['acPowerMultiplier', 'acPowerDivisor'])
-        this.activePowerFactor = acPowerMultiplier / acPowerDivisor;
-        this.setStoreValue('activePowerFactor', this.activePowerFactor).catch(this.error);
-        this.debug('activePowerFactor read from acPowerMultiplier and acPowerDivisor attributes:', acPowerMultiplier, acPowerDivisor, this.activePowerFactor);
-      } catch (error) {
-        this.activePowerFactor = 0.1; // fall back, not stored. Will be retried at the next onNodeInit
-        this.debug('activePowerFactor NOT read from acPowerMultiplier and acPowerDivisor attributes, due to', error);
-      }
-    } else {
-      this.activePowerFactor = this.getStoreValue('activePowerFactor');
-      this.debug('activePowerFactor retrieved from Store:', this.activePowerFactor);
-    }
-    this.log('Defined activePowerFactor:', this.activePowerFactor);
-    this.debug('--  initializing attribute reporting for the electricalMeasurement cluster');
-    await this.configureAttributeReporting([{
-      cluster: CLUSTER.ELECTRICAL_MEASUREMENT,
-      attributeName: 'activePower',
-      minInterval: 5, //
-      maxInterval: 300,
-      minChange: 1 / this.activePowerFactor,
-      endpointId: this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT),
-    },
-    // disable rmsVoltage and rmsCurrent attributeReporting, do NOT await this.initDisableVoltageCurrentReporting()
-    {
-      endpointId: this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT),
-      cluster: CLUSTER.ELECTRICAL_MEASUREMENT,
-      attributeName: 'rmsVoltage',
-      minInterval: 0,
-      maxInterval: 65535,
-      minChange: 10,
-    },
-    {
-      endpointId: this.getClusterEndpoint(CLUSTER.ELECTRICAL_MEASUREMENT),
-      cluster: CLUSTER.ELECTRICAL_MEASUREMENT,
-      attributeName: 'rmsCurrent',
-      minInterval: 0,
-      maxInterval: 65535,
-      minChange: 10,
-    }]).catch(this.error);
-  }
-
-  async setRefCurrentSummationDelivered() {
-    // read actual currentSummationDelivered attribute value
-    const { currentSummationDelivered } = await this.zclNode.endpoints[this.getClusterEndpoint(CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(['currentSummationDelivered']).catch(this.error);
-
-    // update reference currentSummationDelivered based on actual
-    this.referenceCurrentSummationDelivered = currentSummationDelivered;
-
-    // update Store value
-    this.setStoreValue('referenceCurrentSummationDelivered', this.referenceCurrentSummationDelivered).catch(this.error);
   }
 
   async onSettings ({ oldSettings, newSettings, changedKeys }) {
@@ -406,14 +295,14 @@ class ZBThermostatDevice extends ZigBeeDevice {
       await this.configureAttributeReporting([{
         cluster: CLUSTER.THERMOSTAT,
         attributeName: 'localTemperature',
-        minInterval: 5,
+        minInterval: 10,
         maxInterval: temperatureInterval,
         minChange: temperatureThreshold,
       },
       {
         cluster: CLUSTER.THERMOSTAT,
         attributeName: 'outdoorTemperature',
-        minInterval: 5,
+        minInterval: 10,
         maxInterval: temperatureInterval,
         minChange: temperatureThreshold,
       }]).catch(this.error);
@@ -426,22 +315,29 @@ class ZBThermostatDevice extends ZigBeeDevice {
       await this.configureAttributeReporting([{
         cluster: CLUSTER.ELECTRICAL_MEASUREMENT,
         attributeName: 'activePower',
-        minInterval: 5,
+        minInterval: 10,
         maxInterval: powerInterval,
         minChange: powerThreshold,
       }]).catch(this.error);
     }
   }
 
-  onTargetTemperatureAttributeReport(attribute, thermostatMode, value) {
+  onTargetTemperatureAttributeReport(attribute, value) {
     this.log(`attr.${attribute} ${value}`)
-    if (thermostatMode === 'report') thermostatMode = this.getCapabilityValue('thermostat_mode_custom');
+    let parsedValue = Math.round((value / 100) * 10) / 10;
+    this.setCapabilityValue('target_temperature',
+      parsedValue).catch(this.error)
+  }
 
-    if( (attribute === 'occupiedHeatingSetpoint' && thermostatMode !== 'away') || (attribute === 'unoccupiedHeatingSetpoint' && thermostatMode === 'away')) {
-      let parsedValue = thermostatMode !== 'off' ? Math.round((value / 100) * 10) / 10 : null;
-      this.setCapabilityValue('target_temperature',
-        parsedValue).catch(this.error)
-    }
+  async setRefCurrentSummationDelivered() {
+    // read actual currentSummationDelivered attribute value
+    const { currentSummationDelivered } = await this.zclNode.endpoints[this.getClusterEndpoint(CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes('currentSummationDelivered');
+
+    // update reference currentSummationDelivered based on actual
+    this.referenceCurrentSummationDelivered = currentSummationDelivered;
+
+    // update Store value
+    this.setStoreValue('referenceCurrentSummationDelivered', this.referenceCurrentSummationDelivered);
   }
 
   _registerTemperatureCapability(registerCapability, registerAttribute) {
@@ -452,20 +348,18 @@ class ZBThermostatDevice extends ZigBeeDevice {
       },
       report: registerAttribute,
       reportParser (value) {
-        if (value > -20) {
-          let parsedValue = Math.round((value / 100) * 10) / 10;
 
-          const controlledSensor = this.getSetting('thermostat_control_mode') === 2 ? 'measure_temperature.floor' : 'measure_temperature.room';
-          const temperatureAlarmLevel = this.getSetting('temperature_alarm_level');
+        let parsedValue = Math.round((value / 100) * 10) / 10;
 
-          if(controlledSensor === registerCapability) {
-            this.setCapabilityValue('alarm_heat', parsedValue > temperatureAlarmLevel);
-            this.setCapabilityValue('measure_temperature', parsedValue).catch(this.error);
-          };
+        const controlledSensor = this.getSetting('thermostat_control_mode') === 2 ? 'measure_temperature.floor' : 'measure_temperature.room';
+        const temperatureAlarmLevel = this.getSetting('temperature_alarm_level');
 
-          return parsedValue
-        }
-        return null;
+        if(controlledSensor === registerCapability) {
+          this.setCapabilityValue('alarm_heat', parsedValue > temperatureAlarmLevel);
+          this.setCapabilityValue('measure_temperature', parsedValue).catch(this.error);
+        };
+
+        return parsedValue
       },
       reportOpts: {
         configureAttributeReporting: {
