@@ -9,7 +9,7 @@ module.exports = class ZB_Dimmer3wire extends ZBDimmerDevice {
     this.setUnavailable(this.homey.__('pairing.configuring')).catch(this.error);
 
     // enable debugging
-    this.enableDebug();
+    // this.enableDebug();
 
     // print the node's info to the console
     // this.printNode();

@@ -91,7 +91,7 @@ class ZBDimmerDevice extends ZigBeeLightDevice {
           this.setCapabilityValue('meter_power', 0).catch(this.error);
           this.debug('Set referenceCurrentSummationDelivered by reading attributes:', this.referenceCurrentSummationDelivered);
         } else if (!this.getStoreValue('referenceCurrentSummationDelivered')) {
-          this.referenceCurrentSumDelivered = 0;
+          this.referenceCurrentSummationDelivered = 0;
           this.debug('storeValue for referenceCurrentSummationDelivered not defined, set to 0');
         } else {
           this.referenceCurrentSummationDelivered = this.getStoreValue('referenceCurrentSummationDelivered');
@@ -144,7 +144,7 @@ class ZBDimmerDevice extends ZigBeeLightDevice {
           this.debug('METER_POWER value received', value, value * meteringFactor, 'parsed as', (value - referenceCurrentSummationDelivered) * meteringFactor);
           return (value - referenceCurrentSummationDelivered) * meteringFactor;
         },
-        // reportParser = value * this.meteringFactor - this.referenceCurrentSumDelivered
+        // reportParser = value * this.meteringFactor - this.referenceCurrentSummationDelivered
         endpoint: this.getClusterEndpoint(CLUSTER.METERING),
       });
     }

@@ -1,6 +1,6 @@
 {
   "name": "@athombv/data-types",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Binary Data Parsers",
   "main": "index.js",
   "types": "index.d.ts",
